@@ -49,7 +49,7 @@
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
-            <li
+            <li class=tasks_content"
             ${task.done ? " style=\"text-decoration: line-through\"" : ""}>
             <button class="js-done">Zrobione ?</button>
             <button class="js-remove">usuń</button>
