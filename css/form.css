@@ -1,7 +1,22 @@
 .form_fieldset{
     background-color: rgb(255, 255, 255);
+    display: flex;
+    
 }
 
-.form_label{
+.form_header{
+    list-style: none;
     background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.form_taskContent{
+    display: flex;
+    flex-grow: 1;
+    margin: 6px;
+}
+.form_addTasks{
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    margin: 5px;
 }

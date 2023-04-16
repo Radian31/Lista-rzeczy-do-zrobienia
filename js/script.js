@@ -44,16 +44,20 @@
             })
         })
     }
-
+   
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
-            <li class=tasks_content"
-            ${task.done ? " style=\"text-decoration: line-through\"" : ""}>
-            <button class="js-done">Zrobione ?</button>
-            <button class="js-remove">usuń</button>
-            ${task.content}
+            <li class="tasks_content">
+            <button class="tasks_done js-done">✓</button>
+
+             <span class="tasks_name"${task.done ?"task_name" : ""}>
+             ${task.content}
+             </span>
+            
+            <button class="tasks_remove js-remove">🗑</button>
+            
             
            </li>
             `;
