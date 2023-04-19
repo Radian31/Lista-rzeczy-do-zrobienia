@@ -8,11 +8,11 @@ html {
 
 .body {
   font-family: 'Ubuntu', sans-serif;
-  background-color: darkgrey;
+  background-color: #e1e1e1;
   width: 100%;
+  max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  display: ;
   align-items: center;
   justify-content: center;
 }

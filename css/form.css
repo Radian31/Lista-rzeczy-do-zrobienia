@@ -1,22 +1,31 @@
-.form_fieldset{
+.form__fieldset {
     background-color: rgb(255, 255, 255);
     display: flex;
-    
+    flex-wrap: wrap;
+    margin: 2px 3px;
+    border: none;
+
 }
 
-.form_header{
+.form__header {
     list-style: none;
     background-color: rgb(255, 255, 255);
     padding: 10px;
+    margin: 2px 3px;
 }
-.form_taskContent{
+
+.form__taskContent {
     display: flex;
     flex-grow: 1;
     margin: 6px;
+    border: 2px solid;
+    border-color: #f1eff3;
 }
-.form_addTasks{
+
+.form__addTasks {
     background-color: teal;
     color: white;
     padding: 5px;
     margin: 5px;
+    border: none;
 }

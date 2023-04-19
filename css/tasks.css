@@ -1,40 +1,73 @@
-.tasks{
+.tasks {
     background-color: white;
     margin: 3px;
     padding: 13px;
 }
-.tasks_header{
-    background-color: white;
-    margin: -6px;
-    padding: 14px;
-    border-bottom: 2px solid rgb(78, 75, 75);
+
+.tasks__header {
+    padding: 20px;
+    margin: 10px -12px 2px;
+    font-size: 20px;
+    background: white;
+    border-bottom: 2px solid #f1eff3;
 }
-.tasks_element{
+
+.tasks__element {
     background-color: white;
     margin: 0px 0px 2px;
     padding: 10px;
     padding-top: 10px;
 }
-.tasks_content{
+
+.tasks__content {
     list-style: none;
     background-color: white;
-    border-bottom: 2px solid rgb(78, 75, 75);
+    border-bottom: 2px solid #f1eff3;
     padding: 10px;
     display: flex;
     justify-content: space-between;
 
 }
-.tasks_name{
+
+.tasks__name {
     flex-grow: 1;
+    font-size: 15px;
+    padding-left: 7px;
+    word-break: break-word;
 }
-.tasks_buttonDone{
-    background-color: green;
+
+.tasks__name--done {
+    flex-grow: 1;
+    text-decoration: line-through;
+    font-size: 15px;
+    padding-left: 7px;
+    word-break: break-word;
 }
-.tasks_remove{
+
+.tasks__button {
+    background-color: rgb(48, 182, 48);
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    border: none;
+}
+
+.tasks__button--done {
+    background-color: rgb(48, 182, 48);
+    color: #ffffff;
+
+}
+
+.tasks__remove {
     background-color: rgb(249 6 6);
     width: 30px;
+    height: 30px;
+    color: #ffffff;
+    border: none;
 }
-.tasks_done{
+
+.tasks__button {
     background-color: rgb(16, 84, 48);
     width: 30px;
+    color: #ffffff;
 }
