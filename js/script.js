@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "Wyjść do pracy",
-            done: true,
-        },
-        {
-            content: "zjeść obiad",
-            done: false,
-        },
-    ];
+    const tasks = [];
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -35,24 +26,24 @@
                 render();
             })
         })
-        const toggleDonekButtons = document.querySelectorAll(".js-done");
+        const toggleDoneButtons = document.querySelectorAll(".js-done");
 
-        toggleDonekButtons.forEach((toggleDoneButton, index) => {
+        toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(index);
                 render();
             })
         })
     }
-   
+
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
             <li class="tasks_content">
-            <button class="tasks_done js-done">✓</button>
+            <button class="tasks__button tasks__button--done js-done"> ${task.done ? "✓" : ""}</button>
 
-             <span class="tasks_name"${task.done ?"task_name" : ""}>
+             <span class="tasks__name${task.done ? "tasks__name tasks__name--done" : ""}">
              ${task.content}
              </span>
             
@@ -73,12 +64,15 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
-        if (newTaskContent === "") {
-            return;
+        const newTaskElement = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskElement.value.trim("");
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTaskElement.value = "";
+
 
         };
-        addNewTask(newTaskContent);
+        newTaskElement.focus();
     };
 
 
