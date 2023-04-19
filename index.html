@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadania-Adrian Sikorski</title>
+    <title>LISTA TEMATÓW DO WYKONANIA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,28 +20,34 @@
 </head>
 
 <body class="body">
-Lista zadań
-    <form class="form js-form">
-        <h2 class="form_header"> <span>Dodaj nowe zadanie</span></h2>
-        <fieldset class="form_fieldset" >
-            
-                <input class="form_taskContent js-newTask" >
-                <button class="form_addTasks">Dodaj zadanie</button>
-        
-                
-           
-        </fieldset>
-        
-        
-    </form>
+    <section>
+        <header>
+            <h1>Lista zadań</h1>
+        </header>
+
+        <form class="form js-form">
+            <h2 class="form__header"> <span>Dodaj nowe zadanie</span></h2>
+            <fieldset class="form__fieldset">
+
+                <input class="form__taskContent js-newTask" placeholder="Co jest do zrobienia?"/>
+                <button class="form__addTasks">Dodaj zadanie</button>
+
+
+
+            </fieldset>
+
+
+        </form>
+    </section>
+
     <section class="tasks">
-        <h3 class="tasks_header">Lista zadań</h3>
-        <ul class="tasks_element js-tasks">
+        <h3 class="tasks__header">Lista zadań</h3>
+        <ul class="tasks__element js-tasks">
         </ul>
     </section>
-   
 
-    
+
+
 </body>
 
 </html>
