@@ -1,6 +1,5 @@
 .tasks {
-    background-color: white;
-    margin: 3px;
+    margin: -13px;
     padding: 13px;
 }
 
@@ -14,7 +13,7 @@
 
 .tasks__element {
     background-color: white;
-    margin: 0px 0px 2px;
+    margin: 2px 3px 2px;
     padding: 10px;
     padding-top: 10px;
 }
@@ -31,13 +30,14 @@
 
 .tasks__name {
     flex-grow: 1;
-    font-size: 15px;
+   line-height: 30px;
     padding-left: 7px;
     word-break: break-word;
 }
 
 .tasks__name--done {
     flex-grow: 1;
+    line-height: 30px;
     text-decoration: line-through;
     font-size: 15px;
     padding-left: 7px;
