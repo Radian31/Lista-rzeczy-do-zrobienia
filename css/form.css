@@ -39,3 +39,9 @@
     width: 100%;
 }
 }
+.form__addTasks:hover{
+    background-color: #10acac;
+}
+.form__addTasks:active{
+    background-color: #2bd0d0;
+}

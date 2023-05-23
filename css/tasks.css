@@ -45,29 +45,31 @@
 }
 
 .tasks__button {
-    background-color: rgb(48, 182, 48);
+    background-color: rgb(16, 84, 48);
     width: 30px;
     height: 30px;
     color: #ffffff;
     border: none;
 }
-
-.tasks__button--done {
-    background-color: rgb(48, 182, 48);
-    color: #ffffff;
-
+.tasks__button:hover{
+    background-color: rgb(56, 150, 100);
+}
+.tasks__button:active{
+    background-color: rgb(44, 233, 132);
+    border: 1px solid black;
 }
 
 .tasks__remove {
-    background-color: rgb(249 6 6);
+    background-color: rgb(209 6 6);
     width: 30px;
     height: 30px;
     color: #ffffff;
     border: none;
 }
-
-.tasks__button {
-    background-color: rgb(16, 84, 48);
-    width: 30px;
-    color: #ffffff;
+.tasks__remove:hover{
+    background-color: rgb(225 77 77);
+}
+.tasks__remove:active{
+    background-color: rgb(238 107 107);
+    border: 1px solid black;
 }
