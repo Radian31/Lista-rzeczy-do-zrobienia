@@ -53,6 +53,7 @@
     height: 30px;
     color: #ffffff;
     border: none;
+    transition: 1s;
 }
 .tasks__button:hover{
     background-color: rgb(56, 150, 100);
@@ -68,6 +69,7 @@
     height: 30px;
     color: #ffffff;
     border: none;
+    transition: 1s;
 }
 .tasks__remove:hover{
     background-color: rgb(225 77 77);

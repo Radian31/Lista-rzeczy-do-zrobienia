@@ -11,4 +11,5 @@
     border: none;
     margin: 2px -4px 0px;
     margin-right: 3px;
+    transition: 1s;
 }
