@@ -1,4 +1,11 @@
-.section__header {
+.section__header{
+    background: white;
+    margin: 2px 3px 2px;
+    display: grid;
+    grid-template-columns: auto 0.5fr;
+    justify-content: space-between;
+}
+.section__title {
     font-size: 18px;
     list-style: none;
     background-color: rgb(255, 255, 255);
@@ -12,4 +19,13 @@
     margin: 2px -4px 0px;
     margin-right: 3px;
     transition: 1s;
+}
+.buttons{
+    display:flex;
+}
+.buttons__button{
+    background-color: rgb(255, 255, 255);
+    color: teal;
+    border: none;
+    margin: 0 0 0 6px;
 }

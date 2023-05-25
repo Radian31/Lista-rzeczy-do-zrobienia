@@ -1,8 +1,6 @@
 .tasks {
     margin: -13px;
     padding: 13px;
-    display: grid;
-    grid-template-columns: 400px 1fr 1.5fr;
 }
 
 .tasks__header {
