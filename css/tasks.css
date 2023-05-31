@@ -22,7 +22,10 @@
     justify-content: space-between;
 
 }
-
+.tasks__content--hidden{
+    display: none;
+ 
+}
 .tasks__name {
     flex-grow: 1;
    line-height: 30px;
@@ -58,14 +61,14 @@
     border: 1px solid black;
 }
 
-.tasks__remove {
-    background-color: rgb(209 6 6);
+.tasks__button--remove {
+    background-color: rgb(190 6 6);
    
 }
-.tasks__remove:hover{
-    background-color: rgb(225 77 77);
+.tasks__button--remove:hover{
+    background-color: rgb(230 77 77);
 }
-.tasks__remove:active{
-    background-color: rgb(238 107 107);
+.tasks__button--remove:active{
+    background-color: rgb(350 107 107);
     border: 1px solid black;
 }
