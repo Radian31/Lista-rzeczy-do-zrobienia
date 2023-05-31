@@ -1,4 +1,4 @@
-.tasks {
+.section {
     margin: -13px;
     padding: 13px;
 }
@@ -11,7 +11,7 @@
     border-bottom: 2px solid #f1eff3;
 }
 
-.tasks__element {
+.tasks {
     background-color: white;
     margin: 2px 3px 2px;
     padding: 10px;
@@ -53,21 +53,20 @@
     border: none;
     transition: 1s;
 }
-.tasks__button:hover{
+.task__button--toggleDone{
+    background-color: rgb(16, 84, 48);
+}
+.tasks__button--toggleDone:hover{
     background-color: rgb(56, 150, 100);
 }
-.tasks__button:active{
+.tasks__button--toggleDone:active{
     background-color: rgb(44, 233, 132);
     border: 1px solid black;
 }
 
 .tasks__remove {
     background-color: rgb(209 6 6);
-    width: 30px;
-    height: 30px;
-    color: #ffffff;
-    border: none;
-    transition: 1s;
+   
 }
 .tasks__remove:hover{
     background-color: rgb(225 77 77);
