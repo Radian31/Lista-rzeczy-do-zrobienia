@@ -1,8 +1,7 @@
 {
     let tasks = [];
-    let hideDoneTask = false;
-
-
+    let hideDoneTasks = false;
+    
     const removeTask = (taskIndex) => {
         tasks = [
             ...tasks.slice(0, taskIndex),
@@ -30,7 +29,7 @@
         ];
         render();
     };
-    
+
     const markAllTaskDone = () => {
         tasks = tasks.map((task) => ({
             ...task,
@@ -63,32 +62,31 @@
             });
         }); 
     };
-
     const renderTasks = () => {
-        const tasksToHTML = task => `
-             <li class="tasks__content ${task.done && hideDoneTasks ? " tasks__content--hidden" : ""} js-tasks">
-                 <button 
-                     class="tasks__button tasks__button--toggleDone js-toggleDone"
-                 >
-                     ${task.done ? "✔" : ""}
-                 </button>
-                 <span
-                     ${task.done ? "class=tasks__name--done" : "class=tasks__name"}
-                 >
-                     ${task.content}
-                 </span>
-                 <button 
-                     class="tasks__button tasks__button--remove js-remove"
-                 >
-                     🗑
-                 </button>
-             </li>
-         `;
-         const tasksElement = document.querySelector(".js-tasks");
-         tasksElement.innerHTML = tasks.map(tasksToHTML).join("");
-     };
+       const tasksToHTML = task => `
+            <li class="tasks__content ${task.done && hideDoneTasks ? " tasks__content--hidden" : ""} js-tasks">
+                <button 
+                    class="tasks__button tasks__button--toggleDone js-toggleDone"
+                >
+                    ${task.done ? "✔" : ""}
+                </button>
+                <span
+                    ${task.done ? "class=tasks__name--done" : "class=tasks__name"}
+                >
+                    ${task.content}
+                </span>
+                <button 
+                    class="tasks__button tasks__button--remove js-remove"
+                >
+                    🗑
+                </button>
+            </li>
+        `;
+        const tasksElement = document.querySelector(".js-tasks");
+        tasksElement.innerHTML = tasks.map(tasksToHTML).join("");
+    };
 
-     const renderButtons = () => {
+    const renderButtons = () => {
         const buttonsElement = document.querySelector(".js-buttons");
 
         if (!tasks.length) {
@@ -126,20 +124,24 @@
 
     const render = () => {
         renderTasks();
-        renderButtons();
-bindRemoveEvents();
+        bindRemoveEvents();
         bindToggleDoneEvents();
-bindButtonsEvents();
+
+        renderButtons();
+        bindButtonsEvents();
+    };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
         const newTaskElement = document.querySelector(".js-newTask");
-        const newTaskContent = newTaskElement.value.trim("");
+        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+
         if (newTaskContent !== "") {
             addNewTask(newTaskContent);
             newTaskElement.value = "";
         };
+
         newTaskElement.focus();
     };
 
@@ -147,9 +149,8 @@ bindButtonsEvents();
         render();
 
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit);
     };
-    init();
-}
 
+    init();  
+}
