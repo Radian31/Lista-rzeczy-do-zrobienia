@@ -1,22 +1,16 @@
-.section {
-    margin: -13px;
-    padding: 13px;
-}
-
-.tasks__header {
-    padding: 20px;
-    margin: 10px -12px 2px;
-    font-size: 20px;
-    background: white;
-    border-bottom: 2px solid #f1eff3;
-}
-
 .tasks {
     background-color: white;
     margin: 2px 3px 2px;
     padding: 10px;
     padding-top: 10px;
     grid-column: span 3;
+}
+.tasks__header {
+    padding: 20px;
+    margin: 10px -12px 2px;
+    font-size: 20px;
+    background: white;
+    border-bottom: 2px solid #f1eff3;
 }
 
 .tasks__content {
