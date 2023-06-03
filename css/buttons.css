@@ -1,18 +1,16 @@
 .buttons {
     display: flex;
     flex-wrap: wrap;
-};
+}
 
 .buttons__button {
     background: none;
     color: hsl(180, 100%, 25%);
     border: none;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 7px;
     transition: 1s;
-    cursor: pointer;
+    cursor: auto;
 }
-
-;
 
 @media(max-width: 767px) {
     .buttons__button {
@@ -21,4 +19,11 @@
     }
 }
 
-;
+.buttons__button:hover {
+    color: hsl(169, 119%, 38%);
+}
+
+.buttons__button:disabled {
+    color: hsl(286.75deg 1.56% 70.43%);
+
+}

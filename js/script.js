@@ -62,6 +62,7 @@
             });
         });
     };
+    
     const renderTasks = () => {
         const tasksToHTML = task => `
             <li class="tasks__content ${task.done && hideDoneTasks ? " tasks__content--hidden" : ""} js-tasks">
@@ -102,7 +103,7 @@
             </button>
             <button 
                 class="buttons__button js-markAllDone" 
-                    ${tasks.every(({ done }) => done) ? "disabled" : ""}
+                ${tasks.every(({ done }) => done) ? "disabled" : ""}
                 >
                 Ukończ wszystkie
             </button>

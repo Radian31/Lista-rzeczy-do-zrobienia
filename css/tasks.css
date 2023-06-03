@@ -5,6 +5,7 @@
     padding-top: 10px;
     grid-column: span 3;
 }
+
 .tasks__header {
     padding: 20px;
     margin: 10px -12px 2px;
@@ -22,13 +23,14 @@
     justify-content: space-between;
 
 }
-.tasks__content--hidden{
+
+.tasks__content--hidden {
     display: none;
- 
 }
+
 .tasks__name {
     flex-grow: 1;
-   line-height: 30px;
+    line-height: 30px;
     padding-left: 7px;
     word-break: break-word;
 }
@@ -50,25 +52,30 @@
     border: none;
     transition: 1s;
 }
-.task__button--toggleDone{
+
+.task__button--toggleDone {
     background-color: rgb(16, 84, 48);
 }
-.tasks__button--toggleDone:hover{
+
+.tasks__button--toggleDone:hover {
     background-color: rgb(56, 150, 100);
 }
-.tasks__button--toggleDone:active{
+
+.tasks__button--toggleDone:active {
     background-color: rgb(44, 233, 132);
     border: 1px solid black;
 }
 
 .tasks__button--remove {
     background-color: rgb(190 6 6);
-   
+
 }
-.tasks__button--remove:hover{
+
+.tasks__button--remove:hover {
     background-color: rgb(230 77 77);
 }
-.tasks__button--remove:active{
+
+.tasks__button--remove:active {
     background-color: rgb(350 107 107);
     border: 1px solid black;
 }
