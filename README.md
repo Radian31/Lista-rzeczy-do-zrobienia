@@ -3,10 +3,10 @@
 https://radian31.github.io/Lista-rzeczy-do-zrobienia/
 
 ## DESCRIPTION
-Welcome to my to-do list app site. It is quite easy to use and with its help you can manage your daily work schedule and more. You enter the action to be performed in the field and add it to the list using the button or by clicking ENTER. Below you can alternately mark a task as done or to do with the green button and delete it by clicking on the red one.
+Welcome to my to-do list site. It is quite easy to use and with it you can manage your daily work schedule and more. In the field, enter the task to be performed and add it to the list using the button or by clicking ENTER. Below you can alternately mark a task as done or to do with the green button and delete it by clicking on the red button. In addition, you can also use the two buttons above the list to change the interaction of tasks. With the first one you can hide/show all completed tasks and with the second one it will cause
 
 ## DEMO  
-![gif](images/Animation.gif)
+![gif](images/Animation m7.gif)
 
 ## Technologies
 
@@ -16,3 +16,4 @@ Welcome to my to-do list app site. It is quite easy to use and with its help you
 - normalize.css
 - convention BEM
 - Markdown
+- Immutiability

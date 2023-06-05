@@ -2,7 +2,8 @@
     margin: -13px;
     padding: 13px;
 }
-.section__header{
+
+.section__header {
     background: white;
     margin: 2px 3px 2px;
     display: grid;
@@ -10,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .section__title {
     font-size: 18px;
     list-style: none;
