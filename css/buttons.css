@@ -9,7 +9,7 @@
     border: none;
     margin: 0 0 0 7px;
     transition: 1s;
-    cursor: auto;
+    cursor: pointer;
 }
 
 @media(max-width: 767px) {
